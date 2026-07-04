@@ -1,0 +1,41 @@
+# --- LangChain core + integrations (pinned to stable 0.3.x line) ---
+langchain==0.3.*
+langchain-community==0.3.*
+langchain-core==0.3.*
+langchain-text-splitters==0.3.*
+langchain-groq==0.2.*
+langchain-chroma==0.2.*
+
+# --- PDF extraction ---
+pymupdf              # fitz - native text + rendering pages to images for OCR
+pypdf                # fallback / metadata
+
+# --- OCR ---
+pytesseract          # needs system tesseract-ocr installed
+pdf2image            # needs system poppler-utils installed
+Pillow
+
+# --- Chunking / NLP utils ---
+tiktoken             # token-based length function for splitter
+langdetect           # language detection
+
+# --- Embeddings + reranker backbone ---
+sentence-transformers
+torch --index-url https://download.pytorch.org/whl/cpu
+
+# --- Vector DB ---
+chromadb
+
+# --- LLM (Groq) ---
+groq
+
+# --- App / UI ---
+streamlit
+python-dotenv
+
+# --- Eval ---
+numpy
+pandas
+
+# --- (dev/testing only) generate a synthetic sample PDF ---
+reportlab
