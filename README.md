@@ -22,8 +22,7 @@ PDF corpus (10+ PDFs, 200+ pages each), built entirely with **LangChain**.
 4. `reranker.py` — cross-encoder reranking on top of Chroma similarity search (wrapped as a LangChain `ContextualCompressionRetriever`).
 5. `rag_chain.py` — full RAG chain: retrieve → rerank → build a citation-enforcing prompt → Groq LLM → answer + sources + latency breakdown.
 6. `build_index.py` — orchestrates stages 1–4 in one command (run once per corpus update).
-7. `evaluate.py` — latency (p50/p95 vs the 2–5s target) and optional Recall@k / MRR if you supply labeled test cases.
-8. `app.py` (project root) — Streamlit chat UI: ingestion stats, chat, retrieval visualization, citations, latency badge.
+7. `app.py` (project root) — Streamlit chat UI: ingestion stats, chat, retrieval visualization, citations, latency badge.
 
 ---
 
@@ -124,7 +123,6 @@ rag-chatbot/
 │   ├── reranker.py
 │   ├── rag_chain.py
 │   ├── build_index.py
-│   └── evaluate.py
 ├── tests/
 │   └── make_sample_pdf.py
 ├── app.py
