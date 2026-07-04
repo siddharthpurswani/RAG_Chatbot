@@ -32,7 +32,6 @@ PDF corpus (10+ PDFs, 200+ pages each), built entirely with **LangChain**.
 ### 1. System dependencies (needed for OCR)
 **Windows**
 - Tesseract: https://github.com/UB-Mannheim/tesseract/wiki
-- Poppler: https://github.com/oschwartz10612/poppler-windows/releases (add `bin/` to PATH)
 
 **macOS**
 ```bash
